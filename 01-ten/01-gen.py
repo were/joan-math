@@ -34,7 +34,7 @@ latex_table = f"""
 }}
 """
 
-exec(open('./common.py').read())
+exec(open('../common.py').read())
 
-print(latex_template % latex_table)
+print(latex_template() % latex_table)
 
