@@ -21,7 +21,7 @@ def generate_table(op, mn):
     rows = '\\\\\n'.join(rows)
     
     
-    col = 'p{2cm}' * 9
+    col = 'p{2.5cm}' * 9
     
     res = f"""
     {{
