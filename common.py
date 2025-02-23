@@ -8,6 +8,7 @@ def latex_template(landscape=False,):
 \\usepackage{amssymb}
 \\usepackage{tikz}
 \\usepackage{ctex}
+\\usepackage{booktabs}
 
 \\usepackage{tikz}
 \\newcommand{\mysquare}{\\tikz\\draw[draw=blue,thick] (0,0) rectangle (0.4,0.55);}

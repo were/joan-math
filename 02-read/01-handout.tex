@@ -1,0 +1,84 @@
+
+\documentclass[12pt]{article}
+
+\usepackage[]{geometry}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{ctex}
+
+\usepackage{tikz}
+\newcommand{\mysquare}{\tikz\draw[draw=blue,thick] (0,0) rectangle (0.4,0.55);}
+
+\geometry{
+    left=0.3in,
+    right=0.3in,
+    top=0.1in,
+    bottom=0.3in
+}
+
+
+\begin{document}
+
+\title{读数字/Read the Numbers}
+\date{\vspace{-1in}}
+\author{}
+\maketitle
+
+\section{中文}
+
+\subsection{一万以内}
+每一个量级内的四位数在一万以内分别对应：
+$$
+\begin{array}{cccc}
+   \text{千} & \text{百} & \text{十} & \text{个}  \\
+   2 & 3 & 4 & 5
+\end{array}
+$$
+所以2345读作``二千三百四十五''. 特殊规则：
+\begin{itemize}
+    \item 如果两位数起头，则``一十''省略为``十''，如$12$读作``十二''
+    \item 如果``千''与``个''之间有两个0，则省略为一个``〇''，如$1005$读作``一千〇五''
+\end{itemize}
+
+\subsection{量级}
+从右往左，每四个数字进入一个新的数量级，如$1234\text{\color{blue},}5678\text{\color{orange},}1234\text{\color{red},}5678$对应
+$$
+\begin{array}{cccc}
+    \text{\color{blue}万亿} & \text{\color{orange}亿} & \text{\color{red}万} & \\
+    1234 & 5678 & 1234 & 5678
+\end{array}
+$$
+读的时候从左往右，读完一个一万以内的数字跟上量级，然后继续读下一个量级，上面的数字读作
+
+\begin{center}
+    一千两百三十四万亿$\;$五千六百七十八亿$\;$一千两百三十四万$\;$五千六百七十八
+\end{center}
+
+\section{English}
+
+In English, orders are separated by three digits, e.g. 123, 456.
+
+\subsection{Within an Order}
+
+123 can be read as ``one hundred and twenty-three''.
+
+\subsection{Between Orders}
+
+From right to left, every three digits form a new order: 123{\color{blue}, }456{\color{orange}, }789{\color{red}, }012, which corresponds to
+
+$$
+\begin{array}{cccc}
+    \text{\color{blue}billion} & \text{\color{orange}million} & \text{\color{red}thousand} & \\
+    123 & 456 & 789 & 012
+\end{array}
+$$
+
+Therefore, it reads as
+\begin{center}
+    one twenty-three billion, four hundred fifty-six million, seven hundred eighty-nine throusand, twelve
+\end{center}
+\end{document}
+
+

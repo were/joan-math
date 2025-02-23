@@ -7,4 +7,5 @@
   - `01-gen.py`: 生成凑十法的题目
   - `01-example.tex`: 生成的题目示例的LaTeX源码
   - `01-example.pdf`: 生成的题目示例
-2. 减法 (TODO)
+2. 读数字
+
